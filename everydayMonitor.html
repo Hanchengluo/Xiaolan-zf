@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>小榄镇网格化社会管理服务系统解决方案</title>
+  <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok2v=1613a3a185/"},atok:"1fca8a26fb9678bbb4b5c54c34e227b9",petok:"4ca96b72a62631073dd6873922c67f1bf6e51b65-1420553914-1800",zone:"adbee.technology",rocket:"0",apps:{"ga_key":{"ua":"UA-49262924-2","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="http://ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+  <script src="js/demo-rtl.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/libs/font-awesome.css"/>
+  <link rel="stylesheet" type="text/css" href="css/libs/nanoscroller.css"/>
+
+  <link rel="stylesheet" type="text/css" href="css/compiled/theme_styles.css"/>
+  <link rel="stylesheet" href="css/libs/fullcalendar.css" type="text/css"/>
+  <link rel="stylesheet" href="css/compiled/calendar.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/libs/morris.css" type="text/css"/>
+  <link rel="stylesheet" href="css/libs/daterangepicker.css" type="text/css"/>
+  <link type="image/x-icon" href="favicon.png" rel="shortcut icon"/>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body>
+  <div id="theme-wrapper">
+    <header class="navbar" id="header-navbar">
+      <div class="container">
+        <a href="index.html" id="logo" class="navbar-brand">
+          <img src="img/logo.png" alt="" class="normal-logo logo-white"/>
+          <img src="img/logo-black.png" alt="" class="normal-logo logo-black"/>
+          <img src="img/logo-small.png" alt="" class="small-logo hidden-xs hidden-sm hidden"/>
+        </a>
+        <div class="clearfix">
+          <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">切换导航</span>
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+            <ul class="nav navbar-nav pull-left">
+              <li>
+                <a class="btn" id="make-small-nav"> <i class="fa fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-no-collapse pull-right" id="header-nav">
+            <ul class="nav navbar-nav pull-right">
+              <li class="mobile-search">
+                <a class="btn"> <i class="fa fa-search"></i>
+                </a>
+                <div class="drowdown-search">
+                  <form role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="搜索内容">
+                      <i class="fa fa-search nav-search-icon"></i>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li class="dropdown hidden-xs">
+                <a class="btn dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-warning"></i>
+                  <span class="count">8</span>
+                </a>
+                <ul class="dropdown-menu notifications-list">
+                  <li class="pointer">
+                    <div class="pointer-inner">
+                      <div class="arrow"></div>
+                    </div>
+                  </li>
+                  <li class="item-header">你有6条我的待办</li>
+                  <li class="item">
+                    <a href="#">
+                      <i class="fa fa-comment"></i>
+                      <span class="content">火炬区康乐二街的非法小广告，执法...</span>
+                      <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        13 分钟.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <i class="fa fa-comment"></i>
+                      <span class="content">火炬开发区颐岭路无照经营摊贩经...</span>
+                      <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        13 分钟.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <i class="fa fa-comment"></i>
+                      <span class="content">火炬开发区颐岭路无照经营摊贩...</span>
+                      <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        13 分钟.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <i class="fa fa-comment"></i>
+                      <span class="content">火炬开发区颐岭路无照经营摊贩经执...</span>
+                      <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        13 分钟.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <i class="fa fa-comment"></i>
+                      <span class="content">颐领路有乱拉广告执法人员现场...</span>
+                      <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        13 分钟.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="item-footer">
+                    <a href="#">查看全部代办</a>
+                  </li>
+                </ul>
+              </li>
+              <!--<li class="hidden-xs">
+              <a class="btn">
+                <i class="fa fa-cog"></i>
+              </a>
+            </li>
+            -->
+            <li class="dropdown profile-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="img/samples/scarlet-159.png" alt=""/>
+                <span class="hidden-xs">张鱿鱼</span> <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="">
+                    <i class="fa fa-user"></i>
+                    权限设置
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-cog"></i>
+                    个人设置
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-envelope-o"></i>
+                    系统消息
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-power-off"></i>
+                    退出登录
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="hidden-xxs">
+              <a class="btn">
+                <i class="fa fa-power-off"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="page-wrapper" class="container">
+    <div class="row">
+      <div id="nav-col">
+        <section id="col-left" class="col-left-nano">
+          <div id="col-left-inner" class="col-left-nano-content">
+            <div id="user-left-box" class="clearfix hidden-sm hidden-xs">
+              <img alt="" src="img/samples/scarlet-159.png"/>
+              <div class="user-box">
+                <span class="name">
+                  欢迎
+                  <br/>
+                  张鱿鱼
+                </span>
+                <span class="status">
+                  <i class="fa fa-user"></i>
+                  执法中队队长
+                </span>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+              <ul class="nav nav-pills nav-stacked">
+                <li>
+                  <a href="index.html">
+                    <i class="fa fa-dashboard"></i>
+                    <span>个人事务</span>
+                    <span class="label label-info label-circle pull-right">28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-bank"></i>
+                    <span>企业监控管理系统</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="">安监视频监控</a>
+                    </li>
+                    <li>
+                      <a href="">环保视频监控</a>
+                    </li>
+                    <li>
+                      <a href="">交通视频监控</a>
+                    </li>
+                    <li>
+                      <a href="">企业档案库管理</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-group"></i>
+                    <span>相对人档案库管理</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="">实有人员管理</a>
+                    </li>
+                    <li>
+                      <a href="">流动人口管理</a>
+                    </li>
+                    <li>
+                      <a href="">特殊人员管理</a>
+                    </li>
+                    <li>
+                      <a href="">重点人口管理</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-th-large"></i>
+                    <span>执法办公管理系统</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        综合执法业务
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">案件登记</a>
+                        </li>
+                        <li>
+                          <a href="">立案派遣</a>
+                        </li>
+                        <li>
+                          <a href="">任务处理及反馈意见</a>
+                        </li>
+                        <li>
+                          <a href="">任务处理复核</a>
+                        </li>
+                        <li>
+                          <a href="">结案归档</a>
+                        </li>
+                        <li>
+                          <a href="">延期申请</a>
+                        </li>
+                        <li>
+                          <a href="">延期审批</a>
+                        </li>
+                        <li>
+                          <a href="">一级案件查询</a>
+                        </li>
+                        <li>
+                          <a href="">二级案件查询</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">社会事务管理</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span>数据统计分析管理</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="">企业数据统计</a>
+                    </li>
+                    <li>
+                      <a href="">相对人数据统计</a>
+                    </li>
+                    <li>
+                      <a href="">综合业务数据统计</a>
+                    </li>
+                    <li>
+                      <a href="">绩效考评统计</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="active">
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-eye"></i>
+                    <span>综合监察管理系统</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="everydayMonitor.html" class="dropdown-toggle">
+                        日常监察
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">监察业务管理</a>
+                        </li>
+                        <li>
+                          <a href="">我的监察业务</a>
+                        </li>
+                        <li>
+                          <a href="">监察业务审核</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        专项行动
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">专项行动管理</a>
+                        </li>
+                        <li>
+                          <a href="">我的专项行动</a>
+                        </li>
+                        <li>
+                          <a href="">专项行动审核</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-desktop"></i>
+                    <span>应急调度管理系统</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="">人员监控</a>
+                    </li>
+                    <li>
+                      <a href="">车辆监控</a>
+                    </li>
+                    <li>
+                      <a href="">岗哨监控</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-sitemap"></i>
+                    <span>公共模块管理系统</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        事件展示系统
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">行政区划</a>
+                        </li>
+                        <li>
+                          <a href="">部件展现</a>
+                        </li>
+                        <li>
+                          <a href="">问题展现</a>
+                        </li>
+                        <li>
+                          <a href="">部门事件展现</a>
+                        </li>
+                        <li>
+                          <a href="">任务展现</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        基础信息采集系统
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">部件编码</a>
+                        </li>
+                        <li>
+                          <a href="">事件编码</a>
+                        </li>
+                        <li>
+                          <a href="">地理编码</a>
+                        </li>
+                        <li>
+                          <a href="">法人组织数据</a>
+                        </li>
+                        <li>
+                          <a href="">部件管理</a>
+                        </li>
+                        <li>
+                          <a href="">数据更新</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        业务短信系统
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">群发短信功能</a>
+                        </li>
+                        <li>
+                          <a href="">新任务提醒功能</a>
+                        </li>
+                        <li>
+                          <a href="">催促短信功能</a>
+                        </li>
+                        <li>
+                          <a href="">任务提醒功能</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        网格化展示系统
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">房屋展示</a>
+                        </li>
+                        <li>
+                          <a href="">人口展示</a>
+                        </li>
+                        <li>
+                          <a href="">企业商户展示</a>
+                        </li>
+                        <li>
+                          <a href="">街景展示</a>
+                        </li>
+                        <li>
+                          <a href="">事件展示</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">数据交换系统</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-cog"></i>
+                    <span>系统设置管理</span>
+                    <i class="fa fa-chevron-circle-right drop-icon"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        应用维护管理
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">用户管理</a>
+                        </li>
+                        <li>
+                          <a href="">部门管理</a>
+                        </li>
+                        <li>
+                          <a href="">行政区域</a>
+                        </li>
+                        <li>
+                          <a href="">编码管理</a>
+                        </li>
+                        <li>
+                          <a href="">角色管理</a>
+                        </li>
+                        <li>
+                          <a href="">业务事项管理</a>
+                        </li>
+                        <li>
+                          <a href="">工作流自定义</a>
+                        </li>
+                        <li>
+                          <a href="">系统维护与管理</a>
+                        </li>
+                        <li>
+                          <a href="">系统设置管理</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        网格配置管理系统
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">单元网格管理</a>
+                        </li>
+                        <li>
+                          <a href="">结点管理</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle">
+                        数据接口系统
+                        <i class="fa fa-chevron-circle-right drop-icon"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">系统集成接口</a>
+                        </li>
+                        <li>
+                          <a href="">数字城管系统接口</a>
+                        </li>
+                        <li>
+                          <a href="">流管系统接口</a>
+                        </li>
+                        <li>
+                          <a href="">GIS数据接口</a>
+                        </li>
+                        <li>
+                          <a href="">办公OA接口</a>
+                        </li>
+                        <li>
+                          <a href="">短信平台接口</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="content-wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="#">首页</a>
+                  </li>
+                  <li class="active">
+                    <span>日常监察</span>
+                  </li>
+                </ol>
+                <h1>监察业务管理</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="main-box clearfix">
+                  <header class="main-box-header clearfix">
+                    <h2 class="pull-left">我的监察业务</h2>
+                    <div class="filter-block pull-right">
+                      <div class="form-group pull-left">
+                        <input type="text" class="form-control" placeholder="搜索内容">
+                        <i class="fa fa-search search-icon"></i>
+                      </div>
+                      <a href="#" class="btn btn-primary pull-right">
+                        <i class="fa fa-plus-circle fa-lg"></i>
+                        添加监察业务
+                      </a>
+                    </div>
+                  </header>
+                  <div class="main-box-body clearfix">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="40%">
+                              <a href="#">
+                                <span>监察内容</span>
+                              </a>
+                            </th>
+                            <th class="text-center">
+                              <a href="#" class="asc">
+                                <span>监察企业</span>
+                              </a>
+                            </th>
+                            <th class="text-center">
+                              <a href="#" class="asc">
+                                <span>监察物资</span>
+                              </a>
+                            </th>
+                            <th class="text-center">
+                              <span>监察情况</span>
+                            </th>
+                            <th class="text-center">
+                              <a href="#" class="desc">
+                                <span>监察时间</span>
+                              </a>
+                            </th>
+                            <th>&nbsp;</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-success">正常</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-success">正常</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-success">正常</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-danger">危险</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-danger">危险</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-warning">警告</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>加斯马桶厂区废水排放污染物含量检测加斯马桶厂区废水排放污染物含量检测加斯马桶厂区废水排放污染物……</td>
+                            <td class="text-center">加斯高端马桶</td>
+                            <td class="text-center">钙含量</td>
+                            <td class="text-center">
+                              <span class="label label-success">正常</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td style="width: 15%;">
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                              <a href="#" class="table-link danger">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <ul class="pagination pull-right">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-chevron-left"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#">4</a>
+                      </li>
+                      <li>
+                        <a href="#">5</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer-bar" class="row">
+          <p id="footer-copyright" class="col-xs-12">
+            &copy; 2015
+            <a href="##" target="_blank">版权归属：</a>
+            卓商网络科技有限公司
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="config-tool" class="closed">
+  <a id="config-tool-cog">
+    <i class="fa fa-cog"></i>
+  </a>
+  <div id="config-tool-options">
+    <h4>自定义布局</h4>
+    <ul>
+      <li>
+        <div class="checkbox-nice">
+          <input type="checkbox" id="config-fixed-header"/>
+          <label for="config-fixed-header">固定导航</label>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox-nice">
+          <input type="checkbox" id="config-fixed-sidebar"/>
+          <label for="config-fixed-sidebar">固定左菜单</label>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox-nice">
+          <input type="checkbox" id="config-fixed-footer"/>
+          <label for="config-fixed-footer">固定底部</label>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox-nice">
+          <input type="checkbox" id="config-boxed-layout"/>
+          <label for="config-boxed-layout">固定宽度</label>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox-nice">
+          <input type="checkbox" id="config-rtl-layout"/>
+          <label for="config-rtl-layout">从右到左</label>
+        </div>
+      </li>
+    </ul>
+    <br/>
+    <h4>皮肤颜色</h4>
+    <ul id="skin-colors" class="clearfix">
+      <li>
+        <a class="skin-changer" data-skin="" data-toggle="tooltip" title="Default" style="background-color: #34495e;"></a>
+      </li>
+      <li>
+        <a class="skin-changer" data-skin="theme-white" data-toggle="tooltip" title="White/Green" style="background-color: #2ecc71;"></a>
+      </li>
+      <li>
+        <a class="skin-changer blue-gradient" data-skin="theme-blue-gradient" data-toggle="tooltip" title="Gradient"></a>
+      </li>
+      <li>
+        <a class="skin-changer" data-skin="theme-turquoise" data-toggle="tooltip" title="Green Sea" style="background-color: #1abc9c;"></a>
+      </li>
+      <li>
+        <a class="skin-changer" data-skin="theme-amethyst" data-toggle="tooltip" title="Amethyst" style="background-color: #9b59b6;"></a>
+      </li>
+      <li>
+        <a class="skin-changer" data-skin="theme-blue" data-toggle="tooltip" title="Blue" style="background-color: #2980b9;"></a>
+      </li>
+      <li>
+        <a class="skin-changer" data-skin="theme-red" data-toggle="tooltip" title="Red" style="background-color: #e74c3c;"></a>
+      </li>
+      <li>
+        <a class="skin-changer" data-skin="theme-whbl" data-toggle="tooltip" title="White/Blue" style="background-color: #3498db;"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script src="js/demo-skin-changer.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.nanoscroller.min.js"></script>
+<script src="js/demo.js"></script>
+
+<script src="js/jquery-ui.custom.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/raphael-min.js"></script>
+<script src="js/morris.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="js/jquery-jvectormap-world-merc-en.js"></script>
+<script src="js/gdp-data.js"></script>
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.min.js"></script>
+<script src="js/flot/jquery.flot.pie.min.js"></script>
+<script src="js/flot/jquery.flot.stack.min.js"></script>
+<script src="js/flot/jquery.flot.resize.min.js"></script>
+<script src="js/flot/jquery.flot.time.min.js"></script>
+<script src="js/flot/jquery.flot.threshold.js"></script>
+<script src="js/jquery.countTo.js"></script>
+
+<script src="js/scripts.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/echarts-all.js"></script>
+<script src="js/echarts.js"></script>
+<script>
+  $(document).ready(function() {
+
+    /* initialize the external events
+    -----------------------------------------------------------------*/
+
+    $('#external-events div.external-event').each(function() {
+
+      // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+      // it doesn't need to have a start or end
+      var eventObject = {
+        title: $.trim($(this).text()) // use the element's text as the event title
+      };
+
+      // store the Event Object in the DOM element so we can get to it later
+      $(this).data('eventObject', eventObject);
+
+      // make the event draggable using jQuery UI
+      $(this).draggable({
+        zIndex: 999,
+        revert: true,      // will cause the event to go back to its
+        revertDuration: 0  //  original position after the drag
+      });
+
+    });
+
+
+    /* initialize the calendar
+    -----------------------------------------------------------------*/
+
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+
+    var calendar = $('#calendar').fullCalendar({
+      header: {
+        left: '',
+        center: 'title',
+        right: 'prev,next'
+      },
+      isRTL: $('body').hasClass('rtl'), //rtl support for calendar
+      selectable: true,
+      selectHelper: true,
+      select: function(start, end, allDay) {
+        var title = prompt('Event Title:');
+        if (title) {
+          calendar.fullCalendar('renderEvent',
+            {
+              title: title,
+              start: start,
+              end: end,
+              allDay: allDay
+            },
+            true // make the event "stick"
+          );
+        }
+        calendar.fullCalendar('unselect');
+      },
+      editable: true,
+      droppable: true, // this allows things to be dropped onto the calendar !!!
+      drop: function(date, allDay) { // this function is called when something is dropped
+
+        // retrieve the dropped element's stored Event Object
+        var originalEventObject = $(this).data('eventObject');
+
+        // we need to copy it, so that multiple events don't have a reference to the same object
+        var copiedEventObject = $.extend({}, originalEventObject);
+
+        // assign it the date that was reported
+        copiedEventObject.start = date;
+        copiedEventObject.allDay = allDay;
+
+        // copy label class from the event object
+        var labelClass = $(this).data('eventclass');
+
+        if (labelClass) {
+          copiedEventObject.className = labelClass;
+        }
+
+        // render the event on the calendar
+        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+        // is the "remove after drop" checkbox checked?
+        if ($('#drop-remove').is(':checked')) {
+          // if so, remove the element from the "Draggable Events" list
+          $(this).remove();
+        }
+
+      },
+      buttonText: {
+        prev: '<i class="fa fa-chevron-left"></i>',
+        next: '<i class="fa fa-chevron-right"></i>'
+      },
+      events: [
+        {
+          title: 'All Day Event',
+          start: new Date(y, m, 1),
+          className: 'label-success'
+        },
+        {
+          title: 'Long Event',
+          start: new Date(y, m, d-5),
+          end: new Date(y, m, d-2)
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: new Date(y, m, d-3, 16, 0),
+          allDay: false,
+          className: 'label-danger'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: new Date(y, m, d+4, 16, 0),
+          allDay: false
+        },
+        {
+          title: 'Meeting',
+          start: new Date(y, m, d, 10, 30),
+          allDay: false,
+          className: 'label-info'
+        },
+        {
+          title: 'Lunch',
+          start: new Date(y, m, d, 12, 0),
+          end: new Date(y, m, d, 14, 0),
+          allDay: false,
+          className: 'label-success'
+        },
+        {
+          title: 'Birthday Party',
+          start: new Date(y, m, d+1, 19, 0),
+          end: new Date(y, m, d+1, 22, 30),
+          allDay: false,
+          className: 'label-info'
+        },
+        {
+          title: 'Click for Google',
+          start: new Date(y, m, 28),
+          end: new Date(y, m, 29),
+          url: 'http://google.com/',
+          className: 'label-danger'
+        }
+      ]
+    });
+
+      $('.conversation-inner').slimScroll({
+          height: '332px',
+          alwaysVisible: false,
+          railVisible: true,
+          wheelStep: 5,
+          allowPageScroll: false
+      });
+
+      //CHARTS
+    graphLine = Morris.Line({
+      element: 'graph-line',
+      data: [
+        {period: '2014-01-01', iphone: 2666, ipad: null, itouch: 2647},
+        {period: '2014-01-02', iphone: 9778, ipad: 2294, itouch: 2441},
+        {period: '2014-01-03', iphone: 4912, ipad: 1969, itouch: 2501},
+        {period: '2014-01-04', iphone: 3767, ipad: 3597, itouch: 5689},
+        {period: '2014-01-05', iphone: 6810, ipad: 1914, itouch: 2293},
+        {period: '2014-01-06', iphone: 5670, ipad: 4293, itouch: 1881},
+        {period: '2014-01-07', iphone: 4820, ipad: 3795, itouch: 1588},
+        {period: '2014-01-08', iphone: 15073, ipad: 5967, itouch: 5175},
+        {period: '2014-01-09', iphone: 10687, ipad: 4460, itouch: 2028},
+        {period: '2014-01-10', iphone: 8432, ipad: 5713, itouch: 1791}
+      ],
+      lineColors: ['#ffffff'],
+      xkey: 'period',
+      ykeys: ['iphone'],
+      labels: ['iPhone'],
+      pointSize: 3,
+      hideHover: 'auto',
+      gridTextColor: '#ffffff',
+      gridLineColor: 'rgba(255, 255, 255, 0.3)',
+      resize: true
+    });
+
+    //WORLD MAP
+    $('#world-map').vectorMap({
+      map: 'world_merc_en',
+      backgroundColor: '#ffffff',
+      zoomOnScroll: false,
+      regionStyle: {
+        initial: {
+          fill: '#e1e1e1',
+          stroke: 'none',
+          "stroke-width": 0,
+          "stroke-opacity": 1
+        },
+        hover: {
+          "fill-opacity": 0.8
+        },
+        selected: {
+          fill: '#8dc859'
+        },
+        selectedHover: {
+        }
+      },
+      series: {
+        regions: [{
+          values: gdpData,
+          scale: ['#6fc4fe', '#2980b9'],
+          normalizeFunction: 'polynomial'
+        }]
+      },
+      onRegionLabelShow: function(e, el, code){
+        el.html(el.html()+' ('+gdpData[code]+')');
+      }
+    });
+
+    $('.infographic-box .value .timer').countTo({});
+
+  });
+  </script>
+</body>
+</html>
