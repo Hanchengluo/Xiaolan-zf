@@ -319,7 +319,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                     </li>
                   </ul>
                 </li>
-                <li  class="active">
+                <li class="active">
                   <a href="#" class="dropdown-toggle">
                     <i class="fa fa-eye"></i>
                     <span>综合监察管理系统</span>
@@ -343,14 +343,14 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                         </li>
                       </ul>
                     </li>
-                    <li>
+                    <li class="active">
                       <a href="#" class="dropdown-toggle">
                         专项行动
                         <i class="fa fa-chevron-circle-right drop-icon"></i>
                       </a>
                       <ul class="submenu">
-                        <li>
-                          <a href="">专项行动管理</a>
+                        <li class="active">
+                          <a href="" class="active">专项行动管理</a>
                         </li>
                         <li>
                           <a href="">我的专项行动</a>
@@ -581,28 +581,28 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
               <div class="col-lg-12">
                 <ol class="breadcrumb">
                   <li>
-                    <a href="#">首页</a>
+                    <a href="index.html">首页</a>
                   </li>
                   <li class="active">
-                    <span>日常监察</span>
+                    <span>专项行动</span>
                   </li>
                 </ol>
-                <h1>监察业务管理</h1>
+                <h1>专项行动管理</h1>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12">
                 <div class="main-box clearfix">
                   <header class="main-box-header clearfix">
-                    <h2 class="pull-left">我的监察业务</h2>
+                    <h2 class="pull-left">专项行动列表</h2>
                     <div class="filter-block pull-right">
                       <div class="form-group pull-left">
                         <input type="text" class="form-control" placeholder="搜索内容">
                         <i class="fa fa-search search-icon"></i>
                       </div>
-                      <a href="#" class="btn btn-primary pull-right">
+                      <a href="specialActionManagementAdd.html.html" class="btn btn-primary pull-right">
                         <i class="fa fa-plus-circle fa-lg"></i>
-                        添加监察业务
+                        添加专项业务
                       </a>
                     </div>
                   </header>
@@ -613,25 +613,30 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                           <tr>
                             <th width="40%">
                               <a href="#">
-                                <span>监察内容</span>
+                                <span>专项名称</span>
                               </a>
                             </th>
                             <th class="text-center">
                               <a href="#" class="asc">
-                                <span>监察企业</span>
+                                <span>行动编号</span>
                               </a>
                             </th>
                             <th class="text-center">
                               <a href="#" class="asc">
-                                <span>监察物资</span>
+                                <span>行动对象</span>
                               </a>
                             </th>
                             <th class="text-center">
-                              <span>监察情况</span>
+                              <a href="#" class="asc">
+                                <span>参与部门</span>
+                              </a>
+                            </th>
+                            <th class="text-center">
+                              <span>行动地点</span>
                             </th>
                             <th class="text-center">
                               <a href="#" class="desc">
-                                <span>监察时间</span>
+                                <span>行动时间</span>
                               </a>
                             </th>
                             <th>&nbsp;</th>
@@ -639,21 +644,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                         </thead>
                         <tbody>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-success">正常</span>
-                            </td>
-                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
+                            <td class="text-center">2015/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -668,21 +672,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             </td>
                           </tr>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-success">正常</span>
-                            </td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
                             <td class="text-center">2013/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -697,21 +700,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             </td>
                           </tr>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-success">正常</span>
-                            </td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
                             <td class="text-center">2013/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -726,21 +728,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             </td>
                           </tr>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-danger">危险</span>
-                            </td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
                             <td class="text-center">2013/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -755,21 +756,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             </td>
                           </tr>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-danger">危险</span>
-                            </td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
                             <td class="text-center">2013/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -784,21 +784,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             </td>
                           </tr>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-warning">警告</span>
-                            </td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
                             <td class="text-center">2013/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -813,21 +812,20 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             </td>
                           </tr>
                           <tr>
-                            <td>加斯马桶厂区废水排放污染物含量检测加斯马桶厂区废水排放污染物含量检测加斯马桶厂区废水排放污染物……</td>
-                            <td class="text-center">加斯高端马桶</td>
-                            <td class="text-center">钙含量</td>
-                            <td class="text-center">
-                              <span class="label label-success">正常</span>
-                            </td>
+                            <td>XXX市场乱摆卖现象整治行动</td>
+                            <td class="text-center">201508084563423</td>
+                            <td class="text-center">流动小贩</td>
+                            <td class="text-center">城管部门</td>
+                            <td class="text-center">XXX市场</td>
                             <td class="text-center">2013/08/08 12:08</td>
                             <td style="width: 15%;">
-                              <a href="everydayMonitorAddDetails.html" class="table-link">
+                              <a href="specialMonitorAddDetails.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                                 </span>
                               </a>
-                              <a href="everydayMonitorAdd.html" class="table-link">
+                              <a href="specialActionManagementAdd.html.html" class="table-link">
                                 <span class="fa-stack">
                                   <i class="fa fa-square fa-stack-2x"></i>
                                   <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
