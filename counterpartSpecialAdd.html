@@ -201,7 +201,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
               </div>
               <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
                 <ul class="nav nav-pills nav-stacked">
-                  <li class="active">
+                  <li>
                     <a href="index.html">
                       <i class="fa fa-dashboard"></i>
                       <span>个人事务</span>
@@ -229,7 +229,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-group"></i>
                       <span>相对人档案库管理</span>
@@ -243,7 +243,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                         <a href="">流动人口管理</a>
                       </li>
                       <li>
-                        <a href="counterpartSpecial.html">特殊人员管理</a>
+                        <a href="counterpartSpecial.html"  class="active">特殊人员管理</a>
                       </li>
                       <li>
                         <a href="">重点人口管理</a>
@@ -581,615 +581,283 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                     <li>
                       <a href="#">首页</a>
                     </li>
+                    <li>
+                      <span>相对人档案库</span>
+                    </li>
+                    <li>
+                      <a href="counterpartSpecial.html">特殊人口管理</a>
+                    </li>
                     <li class="active">
-                      <span>个人事务</span>
+                      <span>添加特殊人口</span>
                     </li>
                   </ol>
-                  <h1>个人事务</h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                  <div class="main-box infographic-box">
-                    <i class="fa fa-user red-bg"></i>
-                    <span class="headline">队员</span>
-                    <span class="value">
-                      <span class="timer" data-from="120" data-to="2562" data-speed="1000" data-refresh-interval="50">8人</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                  <div class="main-box infographic-box">
-                    <i class="fa fa-calendar emerald-bg"></i>
-                    <span class="headline">代办事件</span>
-                    <span class="value">
-                      <span class="timer" data-from="30" data-to="28" data-speed="800" data-refresh-interval="30">28</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                  <div class="main-box infographic-box">
-                    <i class="fa fa-calendar-o green-bg"></i>
-                    <span class="headline">已完成事件</span>
-                    <span class="value">
-                      <span class="timer" data-from="83" data-to="8400" data-speed="900" data-refresh-interval="60">8400</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12">
-                  <div class="main-box infographic-box">
-                    <i class="fa fa-eye yellow-bg"></i>
-                    <span class="headline">待巡查区域</span>
-                    <span class="value">
-                      <span class="timer" data-from="539" data-to="12526" data-speed="1100">小榄</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="main-box">
-                    <header class="main-box-header clearfix">
-                        <h2>我的事务统计</h2>
-                    </header>
-                    <div class="main-box-body clearfix">
-                      <div id="chart01" style="width:100%;height:314px"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="main-box">
-                    <header class="main-box-header clearfix">
-                        <h2>队员未完成事件统计</h2>
-                    </header>
-                    <div class="main-box-body clearfix">
-                      <div id="chart02" style="width:100%;height:314px;"></div>
-                    </div>
-                  </div>
+                  <h1>添加特殊人口</h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12">
                   <div class="main-box clearfix">
-                    <header class="main-box-header clearfix">
-                      <h2 class="pull-left">等待处理事件</h2>
-                      <div class="filter-block pull-right">
-                        <div class="form-group pull-left">
-                          <input type="text" class="form-control" placeholder="搜索">
-                          <i class="fa fa-search search-icon"></i>
-                        </div>
-                        <a href="counterpartSpecialDetail.html" class="btn btn-primary pull-right">
-                          <i class="fa fa-eye fa-lg"></i>
-                          查看全部事件
-                        </a>
-                      </div>
-                    </header>
-                    <div class="main-box-body clearfix">
-                      <div class="table-responsive clearfix">
-                        <table class="table table-hover">
-                          <thead>
-                            <tr>
-                              <th>
-                                <a href="#">
-                                  <span>案件编码</span>
-                                </a>
-                              </th>
-                              <th>
-                                <a href="#" class="desc">
-                                  <span>时间</span>
-                                </a>
-                              </th>
-                              <th>
-                                <a href="#" class="asc">
-                                  <span>发送人</span>
-                                </a>
-                              </th>
-                              <th>
-                                <a href="#" class="asc">
-                                  <span>描述</span>
-                                </a>
-                              </th>
-                              <th class="text-center">
-                                <span>状态</span>
-                              </th>
-                              <th class="text-right">
-                                <span>当前环节</span>
-                              </th>
-                              <th>&nbsp;</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <a href="#">#8002</a>
-                              </td>
-                              <td>2013/08/08</td>
-                              <td>
-                                <a href="#">詹大彪</a>
-                              </td>
-                              <td>
-                                我局执法人员巡查至颐岭路中心市场发现有无照经营流动档占道经营...
-                              </td>
-                              <td class="text-center">
-                                <span class="label label-success">完成</span>
-                              </td>
-                              <td class="text-right">结案归档</td>
-                              <td class="text-center" style="width: 15%;">
-                                <a href="counterpartSpecialDetail.html" class="table-link">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square fa-stack-2x"></i>
-                                    <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <a href="#">#5832</a>
-                              </td>
-                              <td>2013/08/08</td>
-                              <td>
-                                <a href="#">李逵</a>
-                              </td>
-                              <td>
-                                我局执法人员巡查至颐岭路中心市场发现有无照经营流动档占道经营...
-                              </td>
-                              <td class="text-center">
-                                <span class="label label-warning">暂停</span>
-                              </td>
-                              <td class="text-right">结案归档</td>
-                              <td class="text-center" style="width: 15%;">
-                                <a href="counterpartSpecialDetail.html" class="table-link">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square fa-stack-2x"></i>
-                                    <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <a href="#">#2547</a>
-                              </td>
-                              <td>2013/08/08</td>
-                              <td>
-                                <a href="#">华文虎</a>
-                              </td>
-                              <td>
-                                我局执法人员巡查至颐岭路中心市场发现有无照经营流动档占道经营...
-                              </td>
-                              <td class="text-center">
-                                <span class="label label-info">进行</span>
-                              </td>
-                              <td class="text-right">结案归档</td>
-                              <td class="text-center" style="width: 15%;">
-                                <a href="counterpartSpecialDetail.html" class="table-link">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square fa-stack-2x"></i>
-                                    <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <a href="#">#9274</a>
-                              </td>
-                              <td>2013/08/08</td>
-                              <td>
-                                <a href="#">欧德和</a>
-                              </td>
-                              <td>
-                                我局执法人员巡查至颐岭路中心市场发现有无照经营流动档占道经营...
-                              </td>
-                              <td class="text-center">
-                                <span class="label label-danger">取消</span>
-                              </td>
-                              <td class="text-right">结案归档</td>
-                              <td class="text-center" style="width: 15%;">
-                                <a href="counterpartSpecialDetail.html" class="table-link">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square fa-stack-2x"></i>
-                                    <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <a href="#">#8463</a>
-                              </td>
-                              <td>2013/08/08</td>
-                              <td>
-                                <a href="#">杜二萨</a>
-                              </td>
-                              <td>
-                                我局执法人员巡查至颐岭路中心市场发现有无照经营流动档占道经营...
-                              </td>
-                              <td class="text-center">
-                                <span class="label label-success">完成</span>
-                              </td>
-                              <td class="text-right">结案归档</td>
-                              <td class="text-center" style="width: 15%;">
-                                <a href="counterpartSpecialDetail.html" class="table-link">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square fa-stack-2x"></i>
-                                    <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                </a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                  <header class="main-box-header clearfix">
+                    <h2 class="pull-left">添加特殊人口</h2>
+                  </header>
+                  <div class="main-box-body clearfix">
+                    <table class="table table-striped">
+                      <tbody><tr>
+                        <td height="50" colspan="5">人员基本信息</td>
+                      </tr>
+                      <tr>
+                        <td width="15%">户籍</td>
+                        <td height="50" colspan="2">
+                        <div class="row">
+                        <div class="col-md-3"><div class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                            <label for="optionsRadios1">本地</label>
+                          </div></div>
+                        <div class="col-md-3"><div class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            <label for="optionsRadios2">外地</label>
+                          </div></div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                        </div></td>
+                        <td width="12%" height="50">&nbsp;</td>
+                        <td width="32%" height="50">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="9">信息</td>
+                        <td width="15%" height="50">
+                          <label name="" used="1" category="label" desc="" zdyid="">名称</label>
+                        </td>
+                        <td width="26%" height="50">
+                          <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                        <td height="50">&nbsp;</td>
+                        <td height="50">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="50">
+                          <label name="" used="1" category="label" desc="" zdyid="">分类</label>
+                        </td>
+                        <td height="50">
+                          <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                        <td height="50">&nbsp;</td>
+                        <td height="50">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="50">
+                          <label name="" used="1" category="label" desc="" zdyid="">住所</label>
+                        </td>
+                        <td height="50" colspan="2">
+                          <div>
+                            <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+                          </div>
+                        </td>
+                        <td height="50">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="50">
+                          <label name="" used="1" category="label" desc="" zdyid="">证件类型</label>
+                        </td>
+                        <td height="50">
+                          <input type="email" class="form-control" id="exampleInputEmail1"></td>
+
+                      <td class="text-right" height="50">证件号码</td>
+                      <td height="50">
+                        <input type="email" class="form-control " id="exampleInputEmail1"></td>
+
+                  </tr>
+                  <tr>
+                    <td height="50">
+                      <label name="" used="1" category="label" desc="" zdyid="">执法人区域</label>
+                    </td>
+                    <td height="50">
+                      <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                    <td class="text-right" height="50">排序序号</td>
+                    <td height="50">
+                      <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  </tr>
+                  <tr>
+                    <td height="50">
+                      <label name="" used="1" category="label" desc="" zdyid="">相关说明</label>
+                    </td>
+                    <td height="50" colspan="3">
+                      <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="50">
+                      <label name="" used="1" category="label" desc="" zdyid="">出生日期</label>
+                    </td>
+                    <td height="50">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                        <input type="text" class="form-control" id="maskedDate"></div>
+
+                  </td>
+                  <td class="text-right" height="50">年龄</td>
+                  <td height="50">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="maskedDate"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">违法类型</label>
+                  </td>
+                  <td height="50" colspan="2">
+                    <div class="row">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="maskedDate"></div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="main-box small-graph-box red-bg">
-                    <span class="value">2.562万</span>
-                    <span class="headline">特殊人口</span>
-                    <div class="progress">
-                      <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
-                        <span class="sr-only">60% Complete</span>
+                  </td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">证件扫描件</label>
+                  </td>
+                  <td height="50">
+                    <button type="submit" class="btn btn-success">上传扫描件</button>
+                  </td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td rowspan="6">
+                    <label name="" used="1" category="label" desc="" zdyid="">违法记录</label>
+                  </td>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">违法名称</label>
+                  </td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">违法类型</label>
+                  </td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">违法时间</label>
+                  </td>
+                  <td height="50" colspan="2">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                          <input type="text" class="form-control" id="maskedDate"></div>
                       </div>
-                    </div>
-                    <span class="subinfo">
-                      <i class="fa fa-arrow-circle-o-up"></i>
-                      10% 同比上周
-                    </span>
-                    <span class="subinfo">
-                      <i class="fa fa-users"></i>
-                      29 新增人数
-                    </span>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <div class="main-box small-graph-box emerald-bg">
-                    <span class="value">69.600万</span>
-                    <span class="headline">重点人口</span>
-                    <div class="progress">
-                      <div style="width: 84%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="84" role="progressbar" class="progress-bar">
-                        <span class="sr-only">84% Complete</span>
+                      <div class="col-md-1">
+                        <label style="height:34px;line-height:34px;" for="">至</label>
                       </div>
-                    </div>
-                    <span class="subinfo">
-                      <i class="fa fa-arrow-circle-o-down"></i>
-                      22% 同比上周
-                    </span>
-                    <span class="subinfo">
-                      <i class="fa fa-users"></i>
-                      39 新增人数
-                    </span>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 hidden-sm">
-                  <div class="main-box small-graph-box green-bg">
-                    <span class="value">9.23万</span>
-                    <span class="headline">流动人口</span>
-                    <div class="progress">
-                      <div style="width: 42%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="42" role="progressbar" class="progress-bar">
-                        <span class="sr-only">42% Complete</span>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                          <input type="text" class="form-control" id="maskedDate"></div>
                       </div>
+                      <div class="col-md-3"></div>
                     </div>
-                    <span class="subinfo">
-                      <i class="fa fa-arrow-circle-o-up"></i>
-                      15% 同比上周
-                    </span>
-                    <span class="subinfo">
-                      <i class="fa fa-users"></i>
-                      3909 新增人数
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="main-box">
-                    <header class="main-box-header clearfix">
-                        <h2>我的管理区域</h2>
-                    </header>
-                    <img style="margin:0 auto; display: block;padding: 10px 20px;width: 100%;" src="img/my-map.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="main-box clearfix">
-                    <div class="tabs-wrapper tabs-no-header">
-                      <ul class="nav nav-tabs">
-                        <li class="active">
-                          <a href="#tab-users" data-toggle="tab">队员</a>
-                        </li>
-                        <li>
-                          <a href="#tab-products" data-toggle="tab">代办事件 &nbsp
-                          <span class="label label-info label-circle pull-right">14</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#tab-todo" data-toggle="tab">今日完成事件</a>
-                        </li>
-                      </ul>
-                      <div class="tab-content tab-content-body clearfix">
-                        <div class="tab-pane fade in active" id="tab-users">
-                          <ul class="widget-users row">
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/scarlet.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">詹大彪</a>
-                                </div>
-                                <div class="time">
-                                  <i class="fa fa-clock-o"></i>
-                                  最后在线: 5 分钟前
-                                </div>
-                                <div class="type">
-                                  <span class="label label-danger">队长</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/kunis.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">李逵</a>
-                                </div>
-                                <div class="time online">
-                                  <i class="fa fa-check-circle"></i>
-                                  在线
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">队员</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/ryan.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">华文虎</a>
-                                </div>
-                                <div class="time online">
-                                  <i class="fa fa-check-circle"></i>
-                                  在线
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">队员</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/robert.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">欧德和</a>
-                                </div>
-                                <div class="time">
-                                  <i class="fa fa-clock-o"></i>
-                                  最后在线: 周三
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">队员</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/emma.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">杜二萨</a>
-                                </div>
-                                <div class="time">
-                                  <i class="fa fa-clock-o"></i>
-                                  最后在线: 一周前
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">队员</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/george.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">嘉华世</a>
-                                </div>
-                                <div class="time">
-                                  <i class="fa fa-clock-o"></i>
-                                  最后在线: 1 一个月前
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">雇员</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/kunis.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">鹤顶红</a>
-                                </div>
-                                <div class="time online">
-                                  <i class="fa fa-check-circle"></i>
-                                  在线
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">雇员</span>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="col-md-6">
-                              <div class="img">
-                                <img src="img/samples/ryan.png" alt=""/>
-                              </div>
-                              <div class="details">
-                                <div class="name">
-                                  <a href="#">张莎</a>
-                                </div>
-                                <div class="time online">
-                                  <i class="fa fa-check-circle"></i>
-                                  在线
-                                </div>
-                                <div class="type">
-                                  <span class="label label-info">雇员</span>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                          <br/>
-                          <a href="##" class="btn btn-default pull-right">查看全部队员</a>
-                        </div>
-                        <div class="tab-pane fade" id="tab-products">
-                          <ul class="widget-products">
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">颐领路有乱拉广告执法人员现场拆除 </span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    代办人员：李逵
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">颐领路有占道摆买经执法人员教育后自行搬离 </span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    代办人员：华文虎
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">执法人员巡查到康乐三街发现有无照经营游商，现已取证并疏散。</span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    代办人员：欧德和
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">火炬区港城路的占道广告牌，执法人员对其口头教育后已自行搬离 </span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    代办人员：欧德和
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                          </ul>
-                          <br/>
-                          <a href="#" class="btn btn-success pull-right">查看全部代办</a>
-                        </div>
-                        <div class="tab-pane fade" id="tab-todo">
-                          <ul class="widget-products">
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">颐领路有乱拉广告执法人员现场拆除 </span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    完成人员：李逵
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">颐领路有占道摆买经执法人员教育后自行搬离 </span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    完成人员：华文虎
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">执法人员巡查到康乐三街发现有无照经营游商，现已取证并疏散。</span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    完成人员：欧德和
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span class="product clearfix">
-                                  <span class="name">火炬区港城路的占道广告牌，执法人员对其口头教育后已自行搬离 </span>
-                                  <span class="price">
-                                    <i class="fa fa-clock-o"></i>
-                                    2015-12-25 14:59:09
-                                  </span>
-                                  <span class="warranty">
-                                    <i class="fa fa-user"></i>
-                                    完成人员：欧德和
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                          </ul>
-                          <br/>
-                          <a href="#" class="btn btn-success pull-right">查看全部完成</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">违法地点</label>
+                  </td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid="">备注说明</label>
+                  </td>
+                  <td height="50">
+                    <textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">
+                    <label name="" used="1" category="label" desc="" zdyid=""></label>
+                  </td>
+                  <td height="50">
+                    <button type="submit" class="btn btn-success">添加记录</button>
+                  </td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">管理单位</td>
+                  <td height="50">违法管理单位</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">行业管理单位</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="50">行政管理单位</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td height="50">&nbsp;</td>
+                  <td height="50">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">联系信息</td>
+                  <td height="50">邮寄地址</td>
+                  <td height="50">
+                    <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+                  </td>
+                  <td class="text-right" height="50">邮编</td>
+                  <td height="50">
+
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                </tr>
+                <tr>
+                  <td height="50">传真号码</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td class="text-right" height="50">办公电话</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                </tr>
+                <tr>
+                  <td height="50">邮箱</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                  <td class="text-right" height="50">主要联系人</td>
+                  <td height="50">
+                    <input type="email" class="form-control" id="exampleInputEmail1"></td>
+                </tr>
+                <tr>
+                  <td class="text-center" height="50" colspan="5">
+                  <button type="submit" class="btn btn-success">保存</button>
+                  <button type="submit" class="btn btn-success">修改</button>
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
                 </div>
               </div>
             </div>

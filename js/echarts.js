@@ -47,7 +47,7 @@
    ]
 };
     // 为echarts对象加载数据
-    myChart01.setOption(option);
+myChart01.setOption(option);
 
     // 基于准备好的dom，初始化echarts图表
     var myChart02 = echarts.init(document.getElementById('chart02'));
@@ -126,5 +126,8 @@
        }
    ]
 };
-    // 为echarts对象加载数据
-    myChart02.setOption(option);
+// 为echarts对象加载数据
+myChart02.setOption(option);
+
+
+
