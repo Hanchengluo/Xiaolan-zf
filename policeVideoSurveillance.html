@@ -255,7 +255,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-bank"></i>
                       <span>企业监控管理系统</span>
@@ -263,12 +263,11 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                     </a>
                     <ul class="submenu">
                       <li>
-                        <a href="policeVideoSurveillance.html">公安视频监控</a>
+                        <a class="active" href="policeVideoSurveillance.html">公安视频监控</a>
                       </li>
                       <li>
                         <a href="">企业视频监控</a>
                       </li>
-
                     </ul>
                   </li>
                   <li>
@@ -292,7 +291,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       </li>
                     </ul>
                   </li>
-                  <li class="active">
+                  <li>
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-bar-chart-o"></i>
                       <span>数据统计分析管理</span>
@@ -576,90 +575,34 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                     <li>
                       <a href="#">首页</a>
                     </li>
-                    <li>
-                      <span>数据统计分析</span>
-                    </li>
                     <li class="active">
-                      <span>综合业务数据统计</span>
+                      <span>企业监控管理系统</span>
                     </li>
                   </ol>
-                  <h1>案件综合统计</h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="main-box">
-                    <header class="main-box-header clearfix">
-                        <h2>统计类别</h2>
-                    </header>
-                    <div class="main-box-body clearfix">
-                    <div class="col-md-2">
-                      <a href="integratedService.html" class="btn btn-primary">
-                        <i class="fa fa-eye fa-lg"></i>
-                        案件区域分析
-                      </a>
-                    </div>
-                    <div class="col-md-2">
-                      <a href="integratedService01.html" class="btn btn-primary">
-                        <i class="fa fa-eye fa-lg"></i>
-                        案件综合统计
-                      </a>
-                    </div>
-                    <div class="col-md-2">
-                      <a href="integratedService02.html" class="btn btn-primary">
-                        <i class="fa fa-eye fa-lg"></i>
-                        案件同比分析
-                      </a>
-                    </div>
-                    <div class="col-md-2">
-                      <a href="integratedService03.html" class="btn btn-primary">
-                        <i class="fa fa-eye fa-lg"></i>
-                        案件趋势分析
-                      </a>
-                    </div>
-                    <!-- <div class="col-md-2">
-                      <a href="#" class="btn btn-primary">
-                        <i class="fa fa-eye fa-lg"></i>
-                        月度对比分析
-                      </a>
-                    </div>
-                    <div class="col-md-2">
-                      <a href="#" class="btn btn-primary">
-                        <i class="fa fa-eye fa-lg"></i>
-                        年度对比分析
-                      </a>
-                    </div> -->
-                    </div>
-                  </div>
+                  <h1>公安视频监控</h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12">
                   <div class="main-box">
                     <header class="main-box-header clearfix">
-                        <h2>案件综合统计</h2>
+
+                      <div class="filter-block pull-left">
+                        <div class="btn-group">
+                          <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle has-tooltip" type="button" title="" data-original-title="Labels">
+                          <i class="fa fa-tag"></i> 选择视频监控<span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                          <li><a href="#"><i class="fa fa-circle green"></i> 000425货柜正对</a></li>
+                          <li><a href="#"><i class="fa fa-circle red"></i> 000607门卫旁</a></li>
+                          <li><a href="#"><i class="fa fa-circle yellow"></i> 00493桥墩右侧</a></li>
+                          <li><a href="#"><i class="fa fa-circle purple"></i> 00491桥墩往西</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </header>
                     <div class="main-box-body clearfix">
-                      <div id="chart03" style="width:100%;height:514px"></div>
-                    </div>
-                    <div class="main-box-body text-center clearfix">
-                      <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option1"> 东区
-                        </label>
-                        <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option2"> 西区
-                        </label>
-                        <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option3"> 沙口
-                        </label>
-                        <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option4"> 永宁
-                        </label>
-                        <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option5"> 全小榄镇
-                        </label>
-                      </div>
+                      <img style="margin:0 auto; display: block;padding: 10px 20px;width: 100%;" src="img/voide-list.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -994,243 +937,6 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
     $('.infographic-box .value .timer').countTo({});
 
   });
-
-// 基于准备好的dom，初始化echarts图表
-    var myChart03 = echarts.init(document.getElementById('chart03'));
-    var idx = 1;
-option = {
-    timeline : {
-        data : [
-            '2013-01-01', '2013-02-01', '2013-03-01', '2013-04-01', '2013-05-01',
-            { name:'2013-06-01', symbol:'emptyStar6', symbolSize:8 },
-            '2013-07-01', '2013-08-01', '2013-09-01', '2013-10-01', '2013-11-01',
-            { name:'2013-12-01', symbol:'star6', symbolSize:8 }
-        ],
-        label : {
-            formatter : function(s) {
-                return s.slice(0, 7);
-            }
-        }
-    },
-    options : [
-        {
-            tooltip : {
-                trigger: 'item',
-                formatter: "{b}案件: {c}<br/>所占比例:{d}%"
-            },
-            title : {
-                text: '小榄全镇综合案件统计',
-                subtext: '最新统计时间：2015-12-27 10:29:33'
-            },
-            legend: {
-                data:['盗窃','抢劫','噪音','非法摆摊','违建']
-            },
-            toolbox: {
-                show : true,
-                feature : {
-                    mark : {show: true},
-                    dataView : {show: true, readOnly: false},
-                    magicType : {
-                        show: true,
-                        type: ['pie', 'funnel'],
-                        option: {
-                            funnel: {
-                                x: '25%',
-                                width: '50%',
-                                funnelAlign: 'left',
-                                max: 1700
-                            }
-                        }
-                    },
-                    restore : {show: true},
-                    saveAsImage : {show: true}
-                }
-            },
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    center: ['50%', '45%'],
-                    radius: '50%',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        },
-        {
-            series : [
-                {
-                    name:'小榄镇案件综合统计分析',
-                    type:'pie',
-                    data:[
-                        {value: idx * 128 + 80,  name:'盗窃'},
-                        {value: idx * 64  + 160,  name:'抢劫'},
-                        {value: idx * 32  + 320,  name:'噪音'},
-                        {value: idx * 16  + 640,  name:'非法摆摊'},
-                        {value: idx++ * 8  + 1280, name:'违建'}
-                    ]
-                }
-            ]
-        }
-    ]
-};
-    // 为echarts对象加载数据
-myChart03.setOption(option);
   </script>
 </body>
 </html>
