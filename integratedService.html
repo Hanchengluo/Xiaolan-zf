@@ -633,8 +633,84 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                 <div class="col-md-12">
                   <div class="main-box">
                     <header class="main-box-header clearfix">
-                        <h2>案件区域分析</h2>
+                        <h2 class="pull-left">案件区域分析</h2>
+                        <div class="filter-block pull-right">
+                          <a href="unitGird.html" class="btn btn-primary pull-right">
+                            <i class="fa fa-pencil fa-lg"></i>
+                            编辑网格
+                          </a>
+                      </div>
                     </header>
+                    <div class="main-box-body clearfix">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">案件名称</label>
+                            <div class="col-lg-9">
+                            <input type="text" class="form-control" id="inputEmail1" placeholder="案件名称">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">案件类型</label>
+                            <div class="col-lg-9">
+                            <select class="form-control">
+                              <option>噪音投诉</option>
+                              <option>违建</option>
+                              <option>非法摆摊</option>
+                              <option>盗窃</option>
+                              <option>抢劫</option>
+                            </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">案件区域</label>
+                            <div class="col-lg-9">
+                            <select class="form-control">
+                              <option>西区市区</option>
+                              <option>竹源社区</option>
+                              <option>北区社区</option>
+                              <option>东区社区</option>
+                              <option>新市社区</option>
+                            </select>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">案件时间</label>
+                            <div class="col-lg-9">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" class="form-control" id="maskedDate">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-1 control-label">至</label>
+                            <div class="col-lg-9">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" class="form-control" id="maskedDate">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="#" class="btn btn-primary pull-left">
+                            <i class="fa fa-search fa-lg"></i>
+                            查找
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                     <div class="main-box-body clearfix">
                       <img style="margin:0 auto; display: block;padding: 10px 20px;width: 100%;" src="img/my-map1.png" alt="">
                     </div>

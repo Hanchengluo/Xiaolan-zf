@@ -208,14 +208,14 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       <span class="label label-info label-circle pull-right">28</span>
                     </a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-th-large"></i>
-                      <span>执法办公管理系统</span>
+                      <span>执法监察管理系统</span>
                       <i class="fa fa-chevron-circle-right drop-icon"></i>
                     </a>
                     <ul class="submenu">
-                      <li>
+                      <li class="active">
                         <a href="#" class="dropdown-toggle">
                           综合执法业务
                           <i class="fa fa-chevron-circle-right drop-icon"></i>
@@ -225,7 +225,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             <a href="">案件登记</a>
                           </li>
                           <li>
-                            <a href="">立案派遣</a>
+                            <a class="active" href="">立案派遣</a>
                           </li>
                           <li>
                             <a href="">任务处理及反馈意见</a>
@@ -471,7 +471,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       </li>
                     </ul>
                   </li>
-                  <li  class="active">
+                  <li>
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-cog"></i>
                       <span>系统设置管理</span>
@@ -513,14 +513,14 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                           </li>
                         </ul>
                       </li>
-                      <li  class="active">
+                      <li>
                         <a href="#" class="dropdown-toggle">
                           网格配置管理系统
                           <i class="fa fa-chevron-circle-right drop-icon"></i>
                         </a>
                         <ul class="submenu">
                           <li>
-                            <a  class="active" href="unitGird.html">单元网格管理</a>
+                            <a href="">单元网格管理</a>
                           </li>
                           <li>
                             <a href="">结点管理</a>
@@ -570,31 +570,265 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       <a href="#">首页</a>
                     </li>
                     <li>
-                      <span>系统设置管理</span>
+                      <span>执法监察管理系统</span>
                     </li>
-                    <li  class="active">
-                      <span>网格配置管理系统</span>
+                    <li class="active">
+                      <span>综合执法业务</span>
                     </li>
                   </ol>
-                  <h1>单元网格管理</h1>
+                  <h1>立案派遣</h1>
                 </div>
               </div>
-
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="main-box">
+                  <div class="main-box clearfix">
                     <header class="main-box-header clearfix">
-                      <h2 class="pull-left">单元网格管理</h2>
+                      <h2 class="pull-left">立案派遣列表</h2>
                       <div class="filter-block pull-right">
-                        <a href="integratedService.html" class="btn btn-primary pull-right">
-                          <i class="fa fa-save fa-lg"></i>
-                          保存更改
-                        </a>
+                        <div class="btn-group">
+                          <a href="#" class="btn btn-primary pull-left">
+                            <i class="fa fa-plus-circle fa-lg"></i>
+                            添加
+                          </a>
+                          <a href="#" class="btn btn-primary pull-left">
+                            <i class="fa fa-refresh fa-lg"></i>
+                            刷新
+                          </a>
+                          <a href="#" class="btn btn-primary pull-left" data-toggle="tooltip" data-original-title="导出表格">
+                            <i class="fa fa-file-excel-o fa-lg"></i>
+                            导出
+                          </a>
+                        </div>
                       </div>
                     </header>
                     <div class="main-box-body clearfix">
-                      <div style="width:100%;height:450px;border:#ccc solid 1px;margin:0 auto;" id="dituContent"></div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">案件编码</label>
+                            <div class="col-lg-9">
+                            <input type="text" class="form-control" id="inputEmail1" placeholder="案件编码">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">上报人</label>
+                            <div class="col-lg-9">
+                            <select class="form-control">
+                              <option>詹大彪</option>
+                              <option>李逵</option>
+                              <option>华文虎</option>
+                              <option>张莎</option>
+                              <option>嘉华世</option>
+                            </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">流程名称</label>
+                            <div class="col-lg-9">
+                            <input type="text" class="form-control" id="inputEmail1" placeholder="流程名称">
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-4">
+                          <div class="form-group form-horizontal">
+                            <label for="inputEmail1" class="col-lg-3 control-label">创建时间</label>
+                            <div class="col-lg-9">
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                              <input type="text" class="form-control" id="maskedDate">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <a href="#" class="btn btn-primary pull-left">
+                            <i class="fa fa-search fa-lg"></i>
+                            查找
+                          </a>
+                        </div>
+                      </div>
                     </div>
+                    <div class="main-box-body clearfix">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                                <span>案件编码</span>
+                            </th>
+                            <th class="text-center">
+                                <span>流程名称</span>
+                            </th>
+                            <th class="text-center">
+                                <span>事件分类</span>
+                            </th>
+                            <th width="20%" class="text-center">
+                                <span>描述</span>
+                            </th>
+                            <th class="text-center">
+                              <span>当前环节</span>
+                            </th>
+                            <th width="10%" class="text-center">
+                              <span>案件状态</span>
+                            </th>
+                            <th class="text-center">
+                                <span>发送时间</span>
+                            </th>
+                            <th width="50px">&nbsp;</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">2014112400233</td>
+                            <td class="text-center">立案派遣</td>
+                            <td class="text-center">事件/宣传广告/非法小广告</td>
+                            <td>我镇巡查人员巡查到西区大道，发现非法小广告，经全解已撕毁</td>
+                            <td class="text-center">登记及处理</td>
+                            <td class="text-center">
+                              <span class="label label-info">进行中</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>
+                              <a href="placedDispatchinfo.html" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2014112400233</td>
+                            <td class="text-center">立案派遣</td>
+                            <td class="text-center">事件/宣传广告/非法小广告</td>
+                            <td>我镇巡查人员巡查到西区大道，发现非法小广告，经全解已撕毁</td>
+                            <td class="text-center">登记及处理</td>
+                            <td class="text-center">
+                              <span class="label label-warning">已超时</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>
+                              <a href="placedDispatchinfo.html" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2014112400233</td>
+                            <td class="text-center">立案派遣</td>
+                            <td class="text-center">事件/宣传广告/非法小广告</td>
+                            <td>我镇巡查人员巡查到西区大道，发现非法小广告，经全解已撕毁</td>
+                            <td class="text-center">登记及处理</td>
+                            <td class="text-center">
+                              <span class="label label-info">进行中</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>
+                              <a href="placedDispatchinfo.html" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2014112400233</td>
+                            <td class="text-center">立案派遣</td>
+                            <td class="text-center">事件/宣传广告/非法小广告</td>
+                            <td>我镇巡查人员巡查到西区大道，发现非法小广告，经全解已撕毁</td>
+                            <td class="text-center">登记及处理</td>
+                            <td class="text-center">
+                             <span class="label label-success">已完成</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>
+                              <a href="placedDispatchinfo.html" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2014112400233</td>
+                            <td class="text-center">立案派遣</td>
+                            <td class="text-center">事件/宣传广告/非法小广告</td>
+                            <td>我镇巡查人员巡查到西区大道，发现非法小广告，经全解已撕毁</td>
+                            <td class="text-center">登记及处理</td>
+                            <td class="text-center">
+                              <span class="label label-success">已完成</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>
+                              <a href="placedDispatchinfo.html" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2014112400233</td>
+                            <td class="text-center">立案派遣</td>
+                            <td class="text-center">事件/宣传广告/非法小广告</td>
+                            <td>我镇巡查人员巡查到西区大道，发现非法小广告，经全解已撕毁</td>
+                            <td class="text-center">登记及处理</td>
+                            <td class="text-center">
+                              <span class="label label-success">已完成</span>
+                            </td>
+                            <td class="text-center">2013/08/08 12:08</td>
+                            <td>
+                              <a href="placedDispatchinfo.html" class="table-link">
+                                <span class="fa-stack">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <ul class="pagination pull-right">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-chevron-left"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#">4</a>
+                      </li>
+                      <li>
+                        <a href="#">5</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -929,47 +1163,5 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
 
   });
   </script>
-
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-  <script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-    }
-
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(113.258388,22.66898);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-  var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-  map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-  var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-  map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-  var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-  map.addControl(ctrl_sca);
-    }
-
-
-    initMap();//创建和初始化地图
-</script>
 </body>
 </html>

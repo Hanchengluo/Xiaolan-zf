@@ -208,14 +208,14 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       <span class="label label-info label-circle pull-right">28</span>
                     </a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-th-large"></i>
-                      <span>执法办公管理系统</span>
+                      <span>执法监察管理系统</span>
                       <i class="fa fa-chevron-circle-right drop-icon"></i>
                     </a>
                     <ul class="submenu">
-                      <li>
+                      <li class="active">
                         <a href="#" class="dropdown-toggle">
                           综合执法业务
                           <i class="fa fa-chevron-circle-right drop-icon"></i>
@@ -225,7 +225,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                             <a href="">案件登记</a>
                           </li>
                           <li>
-                            <a href="">立案派遣</a>
+                            <a class="active" href="">立案派遣</a>
                           </li>
                           <li>
                             <a href="">任务处理及反馈意见</a>
@@ -471,7 +471,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       </li>
                     </ul>
                   </li>
-                  <li  class="active">
+                  <li>
                     <a href="#" class="dropdown-toggle">
                       <i class="fa fa-cog"></i>
                       <span>系统设置管理</span>
@@ -513,14 +513,14 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                           </li>
                         </ul>
                       </li>
-                      <li  class="active">
+                      <li>
                         <a href="#" class="dropdown-toggle">
                           网格配置管理系统
                           <i class="fa fa-chevron-circle-right drop-icon"></i>
                         </a>
                         <ul class="submenu">
                           <li>
-                            <a  class="active" href="unitGird.html">单元网格管理</a>
+                            <a href="">单元网格管理</a>
                           </li>
                           <li>
                             <a href="">结点管理</a>
@@ -570,34 +570,119 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
                       <a href="#">首页</a>
                     </li>
                     <li>
-                      <span>系统设置管理</span>
+                      <span>执法监察管理系统</span>
                     </li>
-                    <li  class="active">
-                      <span>网格配置管理系统</span>
+                    <li class="active">
+                      <span>综合执法业务</span>
                     </li>
                   </ol>
-                  <h1>单元网格管理</h1>
+                  <h1>添加立案派遣</h1>
                 </div>
               </div>
-
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="main-box">
-                    <header class="main-box-header clearfix">
-                      <h2 class="pull-left">单元网格管理</h2>
-                      <div class="filter-block pull-right">
-                        <a href="integratedService.html" class="btn btn-primary pull-right">
-                          <i class="fa fa-save fa-lg"></i>
-                          保存更改
-                        </a>
-                      </div>
-                    </header>
-                    <div class="main-box-body clearfix">
-                      <div style="width:100%;height:450px;border:#ccc solid 1px;margin:0 auto;" id="dituContent"></div>
-                    </div>
+              <div class="col-lg-12">
+                <div class="main-box clearfix">
+                  <header class="main-box-header clearfix">
+                    <h2 class="pull-left">添加立案派遣</h2>
+                  </header>
+                  <div class="main-box-body clearfix">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <td height="50" colspan="5">案件基本信息</td>
+                        </tr>
+                        <tr>
+                          <td width="15%">标题</td>
+                          <td height="50" colspan="2"><input type="email" class="form-control" id="exampleInputEmail1"></td>
+                          <td width="12%" height="50">&nbsp;</td>
+                          <td width="32%" height="50">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="8">信息</td>
+                          <td width="15%" height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">组长</label>
+                          </td>
+                          <td width="26%" height="50"><input type="email" class="form-control col-md-4" id="exampleInputEmail1"></td>
+                          <td height="50">副组长</td>
+                          <td height="50"><input type="email" class="form-control" id="exampleInputEmail1"></td>
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">组员</label>
+                          </td>
+                          <td height="50">
+                              <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+                          </td>
+                          <td height="50">&nbsp;</td>
+                          <td height="50">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">派遣地址</label>
+                          </td>
+                          <td height="50" colspan="2">
+                            <div><input type="email" class="form-control" id="exampleInputEmail1"></div>
+                          </td>
+                          <td height="50">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">案件编码</label>
+                          </td>
+                          <td height="50"><input type="email" class="form-control" id="exampleInputEmail1"></td>
+
+                          <td class="text-right" height="50">流程名称</td>
+                          <td height="50"><input type="email" class="form-control" id="exampleInputEmail1"></td>
+
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">事件分类</label>
+                          </td>
+                          <td height="50"><input type="email" class="form-control" id="exampleInputEmail1"></td>
+                          <td class="text-right" height="50">案件状态</td>
+                          <td height="50"><input type="email" class="form-control" id="exampleInputEmail1"></td>
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">描述</label>
+                          </td>
+                          <td height="50" colspan="3"><textarea class="form-control" id="exampleTextarea" rows="3"></textarea></td>
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">发送时间</label>
+                          </td>
+                          <td height="50"><div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                        <input type="text" class="form-control" id="maskedDate"></div></td>
+                          <td class="text-right" height="50">&nbsp;</td>
+                          <td height="50">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td height="50">
+                            <label name="" used="1" category="label" desc="" zdyid="">取证照片</label>
+                          </td>
+                          <td height="50">
+                            <button type="submit" class="btn btn-success">上传附件</button></td>
+                          <td height="50">&nbsp;</td>
+                          <td height="50">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-center" height="50" colspan="5">
+                            <a class="btn btn-success" href="placedDispatch.html">添加</a>
+                            <a class="btn btn-success" href="">取消</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
           <footer id="footer-bar" class="row">
@@ -929,47 +1014,5 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1419364062,byc:0,owlid
 
   });
   </script>
-
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-  <script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-    }
-
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(113.258388,22.66898);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-  var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-  map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-  var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-  map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-  var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-  map.addControl(ctrl_sca);
-    }
-
-
-    initMap();//创建和初始化地图
-</script>
 </body>
 </html>
